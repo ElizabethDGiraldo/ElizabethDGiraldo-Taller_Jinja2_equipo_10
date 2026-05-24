@@ -1,0 +1,25 @@
+<html>
+<head>
+  <title>{% block titulo %}Mi App{% endblock %}</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+    <h1>Taller Jinja2 equipo 10</h1>
+
+  <nav>
+
+    <ul class="nav-taller">
+      <li><a href="/clima">Taller-10</a></li>
+      <li><a href="/empleados">Taller-22</a></li>
+      <li><a href="/personas">Taller-34</a></li>
+    </ul>
+  </nav>
+
+  {% block contenido %}
+  {% endblock %}
+
+  <footer>by Edwars Torres, Elizabeth Duarte, Dylan Ramirez-2026®</footer>
+
+</body>
+</html>

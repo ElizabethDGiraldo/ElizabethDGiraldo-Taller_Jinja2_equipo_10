@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block contenido %}
+ <h2>De acuerdo a como ves el clima el dia de hoy introduce si esta: <br>
+soleado, nublado o lluvioso 🐝🌺</h2>
+    <form action="/mensaje" method="post">
+
+        <input type="text" name="texto">
+
+        <button type="submit">
+            Enviar
+        </button>
+
+    </form>
+
+    <h1>{{ respuesta }}</h1>
+{% endblock %}

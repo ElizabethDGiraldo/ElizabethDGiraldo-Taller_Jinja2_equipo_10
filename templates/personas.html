@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block titulo %}
+Personas
+{% endblock %}
+
+{% block contenido %}
+
+<h2>Lista de Personas</h2>
+
+{% for persona in personas %}
+
+    {% with nombre_persona=persona.nombre, edad_persona=persona.edad %}
+
+        {% include "_ficha.html" %}
+
+    {% endwith %}
+
+{% endfor %}
+
+{% endblock %}
